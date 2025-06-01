@@ -1,38 +1,38 @@
 # 🌐 IP Address Finder
 
-Un'applicazione desktop moderna e intuitiva per trovare e gestire i tuoi indirizzi IP pubblici e locali, con funzionalità avanzate di geolocalizzazione e sistema integrato.
+A modern and intuitive desktop application to find and manage your public and local IP addresses, with advanced geolocation features and system integration.
 
 ![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## ✨ Caratteristiche Principali
+## ✨ Key Features
 
-### 🔍 **Rilevamento IP Avanzato**
-- **IP Pubblico**: Rileva automaticamente il tuo indirizzo IP pubblico utilizzando servizi multipli per garantire affidabilità
-- **IP Locale**: Mostra istantaneamente il tuo indirizzo IP locale nella rete domestica/aziendale
-- **Backup Multi-servizio**: Sistema di fallback che utilizza diversi provider (ipify.org, httpbin.org, myip.com)
+### 🔍 **Advanced IP Detection**
+- **Public IP**: Automatically detects your public IP address using multiple services for reliability
+- **Local IP**: Instantly displays your local IP address on your home/corporate network
+- **Multi-Service Backup**: Fallback system using different providers (ipify.org, httpbin.org, myip.com)
 
-### 🌍 **Geolocalizzazione Intelligente**
-- **Informazioni Geografiche**: Ottieni dettagli completi sulla posizione del tuo IP pubblico
-- **Dati ISP**: Visualizza informazioni sul provider di servizi internet
-- **Coordiniate GPS**: Coordinate precise di latitudine e longitudine
-- **Timezone**: Fuso orario associato alla tua posizione
+### 🌍 **Smart Geolocation**
+- **Geographic Information**: Get complete details about your public IP location
+- **ISP Data**: View information about your internet service provider
+- **GPS Coordinates**: Precise latitude and longitude coordinates
+- **Timezone**: Time zone associated with your location
 
-### 🖥️ **Interfaccia Moderna**
-- **Design Dark Theme**: Interfaccia elegante con tema scuro moderno
-- **Responsive UI**: Layout ottimizzato per una migliore esperienza utente
-- **Animazioni Hover**: Effetti interattivi sui pulsanti e elementi
-- **Codice Colori Semantico**: Colori distintivi per successo, errore e informazioni
+### 🖥️ **Modern Interface**
+- **Dark Theme Design**: Elegant interface with modern dark theme
+- **Responsive UI**: Optimized layout for better user experience
+- **Hover Animations**: Interactive effects on buttons and elements
+- **Semantic Color Coding**: Distinctive colors for success, error, and information
 
-### 📋 **Gestione Clipboard**
-- **Copia Rapida**: Copia istantaneamente gli indirizzi IP negli appunti
-- **Feedback Visivo**: Conferme immediate delle operazioni di copia
-- **Compatibilità Cross-platform**: Supporto clipboard per tutti i sistemi operativi
+### 📋 **Clipboard Management**
+- **Quick Copy**: Instantly copy IP addresses to clipboard
+- **Visual Feedback**: Immediate confirmation of copy operations
+- **Cross-platform Compatibility**: Clipboard support for all operating systems
 
-## 🚀 Installazione e Avvio
+## 🚀 Installation and Launch
 
-### Metodo 1: Avvio Automatico (Consigliato)
+### Method 1: Automatic Launch (Recommended)
 ```bash
 # Windows
 start.bat
@@ -41,194 +41,194 @@ start.bat
 python start.py
 ```
 
-### Metodo 2: Installazione Manuale
+### Method 2: Manual Installation
 ```bash
-# 1. Installa le dipendenze
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Avvia l'applicazione
+# 2. Launch the application
 python main.py
 ```
 
-## 📁 Struttura del Progetto
+## 📁 Project Structure
 
 ```
 ip-address-finder/
-├── 📄 main.py              # Applicazione principale con GUI
-├── 🚀 start.py             # Script di avvio automatico
-├── 💾 start.bat            # Launcher per Windows
-├── 📋 requirements.txt     # Dipendenze Python
-├── 📖 README.md            # Documentazione del progetto
-└── 🖼️ ico/                 # Directory per icone (opzionale)
-    └── app_icon.ico        # Icona dell'applicazione
+├── 📄 main.py              # Main application with GUI
+├── 🚀 start.py             # Automatic startup script
+├── 💾 start.bat            # Windows launcher
+├── 📋 requirements.txt     # Python dependencies
+├── 📖 README.md            # Project documentation
+└── 🖼️ ico/                 # Icons directory (optional)
+    └── app_icon.ico        # Application icon
 ```
 
-## 🔧 Descrizione dei File
+## 🔧 File Descriptions
 
 ### `main.py` - 🎯 **Core Application**
-Il cuore dell'applicazione che contiene:
+The heart of the application containing:
 
-- **`AdvancedIPFinder`**: Classe principale che gestisce l'intera interfaccia utente
-- **GUI Components**: Interfaccia grafica costruita con Tkinter
-- **IP Detection**: Logica per il rilevamento di IP pubblici e locali
-- **Network Services**: Integrazione con servizi web per IP e geolocalizzazione
-- **Clipboard Management**: Gestione della copia negli appunti
-- **Threading**: Operazioni asincrone per non bloccare l'interfaccia
+- **`AdvancedIPFinder`**: Main class managing the entire user interface
+- **GUI Components**: Graphical interface built with Tkinter
+- **IP Detection**: Logic for detecting public and local IPs
+- **Network Services**: Integration with web services for IP and geolocation
+- **Clipboard Management**: Clipboard copy functionality
+- **Threading**: Asynchronous operations to prevent UI blocking
 
-**Caratteristiche tecniche:**
-- 🎨 **Design System**: Schema colori coerente e moderno
-- 🔄 **Multi-threading**: Richieste di rete non bloccanti
-- 🛡️ **Error Handling**: Gestione robusta degli errori di rete
-- 📱 **Responsive Layout**: Interfaccia adattiva e centrata
+**Technical Features:**
+- 🎨 **Design System**: Consistent and modern color scheme
+- 🔄 **Multi-threading**: Non-blocking network requests
+- 🛡️ **Error Handling**: Robust network error management
+- 📱 **Responsive Layout**: Adaptive and centered interface
 
 ### `start.py` - ⚡ **Smart Launcher**
-Sistema di avvio intelligente che include:
+Intelligent startup system including:
 
-- **Dependency Checker**: Verifica automatica delle dipendenze Python
-- **Auto-installer**: Installazione automatica dei pacchetti mancanti
-- **Environment Validation**: Controllo dell'ambiente di esecuzione
-- **Colored Output**: Output colorato per una migliore user experience
-- **Error Recovery**: Gestione intelligente degli errori di installazione
+- **Dependency Checker**: Automatic Python dependency verification
+- **Auto-installer**: Automatic installation of missing packages
+- **Environment Validation**: Execution environment checks
+- **Colored Output**: Colored output for better user experience
+- **Error Recovery**: Intelligent installation error handling
 
-**Funzionalità:**
-- ✅ **Auto-setup**: Configura automaticamente l'ambiente
-- 🔍 **Smart Detection**: Rileva Python e le librerie necessarie
-- 🎨 **Colored CLI**: Interface a linea di comando colorata
-- ⏱️ **Timeout Handling**: Gestione dei timeout di installazione
+**Features:**
+- ✅ **Auto-setup**: Automatically configures the environment
+- 🔍 **Smart Detection**: Detects Python and required libraries
+- 🎨 **Colored CLI**: Colored command line interface
+- ⏱️ **Timeout Handling**: Installation timeout management
 
 ### `start.bat` - 🏁 **Windows Quick Launcher**
-Launcher semplificato per utenti Windows:
-- Avvio con doppio click
-- Titolo personalizzato della finestra
-- Pausa finale per visualizzare eventuali errori
+Simplified launcher for Windows users:
+- Double-click launch
+- Custom window title
+- Final pause to view any errors
 
 ### `requirements.txt` - 📦 **Dependencies**
-Lista delle dipendenze essenziali:
-- **`requests`**: Per le chiamate HTTP ai servizi di rilevamento IP
-- **`pyperclip`**: Per la gestione avanzata degli appunti cross-platform
+List of essential dependencies:
+- **`requests`**: For HTTP calls to IP detection services
+- **`pyperclip`**: For advanced cross-platform clipboard management
 
-## 🎮 Come Utilizzare
+## 🎮 How to Use
 
-### 1️⃣ **Ottenere l'IP Pubblico**
-1. Clicca sul pulsante **"🔍 Ottieni IP Pubblico"**
-2. Attendi il caricamento (indicatore di progresso)
-3. Visualizza il risultato con opzioni aggiuntive
+### 1️⃣ **Get Public IP**
+1. Click the **"🔍 Get Public IP"** button
+2. Wait for loading (progress indicator)
+3. View the result with additional options
 
-### 2️⃣ **Visualizzare l'IP Locale**
-- L'IP locale viene mostrato automaticamente all'avvio
-- Utilizza il pulsante **"📋 Copia"** per copiarlo
+### 2️⃣ **View Local IP**
+- Local IP is automatically displayed on startup
+- Use the **"📋 Copy"** button to copy it
 
-### 3️⃣ **Esplorare le Informazioni Geografiche**
-1. Dopo aver ottenuto l'IP pubblico, clicca **"🌍 Info Geo"**
-2. Visualizza dettagli completi su:
-   - 🌍 Paese e città
-   - 📍 Regione e coordinate
-   - 🌐 Provider internet (ISP)
-   - 🕐 Fuso orario
+### 3️⃣ **Explore Geographic Information**
+1. After getting the public IP, click **"🌍 Geo Info"**
+2. View complete details about:
+   - 🌍 Country and city
+   - 📍 Region and coordinates
+   - 🌐 Internet provider (ISP)
+   - 🕐 Time zone
 
-### 4️⃣ **Copiare negli Appunti**
-- Utilizza i pulsanti **"📋 Copia"** per copiare rapidamente gli IP
-- Ricevi conferma immediata dell'operazione
+### 4️⃣ **Copy to Clipboard**
+- Use **"📋 Copy"** buttons to quickly copy IPs
+- Get immediate operation confirmation
 
-## 🛠️ Requisiti di Sistema
+## 🛠️ System Requirements
 
 ### **Software Requirements**
-- **Python**: 3.7 o superiore
-- **Sistema Operativo**: Windows 10+, macOS 10.14+, Linux (Ubuntu 18.04+)
-- **Connessione Internet**: Necessaria per il rilevamento IP pubblico
+- **Python**: 3.7 or higher
+- **Operating System**: Windows 10+, macOS 10.14+, Linux (Ubuntu 18.04+)
+- **Internet Connection**: Required for public IP detection
 
 ### **Hardware Requirements**
-- **RAM**: Minimo 512 MB disponibili
-- **Storage**: 50 MB di spazio libero
-- **Display**: Risoluzione minima 800x600
+- **RAM**: Minimum 512 MB available
+- **Storage**: 50 MB free space
+- **Display**: Minimum resolution 800x600
 
-## 🔒 Privacy e Sicurezza
+## 🔒 Privacy and Security
 
-### **Protezione dei Dati**
-- ✅ **No Data Storage**: Nessun dato viene salvato localmente
-- ✅ **No Tracking**: Non vengono tracciati comportamenti o preferenze
-- ✅ **HTTPS Only**: Tutte le comunicazioni utilizzano protocolli sicuri
-- ✅ **Local Processing**: Elaborazione completamente locale dei dati
+### **Data Protection**
+- ✅ **No Data Storage**: No data is saved locally
+- ✅ **No Tracking**: No behavior or preferences tracking
+- ✅ **HTTPS Only**: All communications use secure protocols
+- ✅ **Local Processing**: Completely local data processing
 
-### **Servizi Utilizzati**
-I seguenti servizi esterni vengono utilizzati esclusivamente per il rilevamento IP:
-- 🔗 **ipify.org**: Servizio principale per IP pubblico
-- 🔗 **httpbin.org**: Servizio di backup
-- 🔗 **myip.com**: Servizio alternativo
-- 🔗 **ip-api.com**: Per informazioni di geolocalizzazione
+### **External Services Used**
+The following external services are used exclusively for IP detection:
+- 🔗 **ipify.org**: Primary service for public IP
+- 🔗 **httpbin.org**: Backup service
+- 🔗 **myip.com**: Alternative service
+- 🔗 **ip-api.com**: For geolocation information
 
 ## 🐛 Troubleshooting
 
-### **Problemi Comuni e Soluzioni**
+### **Common Issues and Solutions**
 
-#### ❌ **"Errore nel recuperare l'IP pubblico"**
-**Possibili cause:**
-- Connessione internet assente o instabile
-- Firewall che blocca le richieste HTTP
-- Servizi di rilevamento IP temporaneamente non disponibili
+#### ❌ **"Error retrieving public IP"**
+**Possible causes:**
+- No internet connection or unstable connection
+- Firewall blocking HTTP requests
+- IP detection services temporarily unavailable
 
-**Soluzioni:**
-1. Verifica la connessione internet
-2. Riprova dopo alcuni secondi
-3. Controlla le impostazioni del firewall
+**Solutions:**
+1. Check internet connection
+2. Try again after a few seconds
+3. Check firewall settings
 
-#### ❌ **"IP locale non disponibile"**
-**Possibili cause:**
-- Problemi di configurazione di rete
-- Interfacce di rete disabilitate
+#### ❌ **"Local IP not available"**
+**Possible causes:**
+- Network configuration issues
+- Network interfaces disabled
 
-**Soluzioni:**
-1. Riavvia l'applicazione
-2. Controlla le connessioni di rete attive
-3. Riavvia l'adattatore di rete se necessario
+**Solutions:**
+1. Restart the application
+2. Check active network connections
+3. Restart network adapter if necessary
 
-#### ❌ **"Impossibile ottenere informazioni di geolocalizzazione"**
-**Possibili cause:**
-- IP pubblico non valido
-- Servizio di geolocalizzazione non disponibile
-- Restrizioni di rete aziendali
+#### ❌ **"Unable to get geolocation information"**
+**Possible causes:**
+- Invalid public IP
+- Geolocation service unavailable
+- Corporate network restrictions
 
-**Soluzioni:**
-1. Verifica di avere un IP pubblico valido
-2. Riprova dopo alcuni minuti
-3. Contatta l'amministratore di rete se in ambiente aziendale
+**Solutions:**
+1. Verify you have a valid public IP
+2. Try again after a few minutes
+3. Contact network administrator if in corporate environment
 
-## 📈 Roadmap e Sviluppi Futuri
+## 📈 Roadmap and Future Development
 
-### **Versione 2.0 - Pianificata**
-- 🌐 **Multi-language Support**: Supporto per inglese e altre lingue
-- 📊 **Network Monitoring**: Monitoraggio continuo della connessione
-- 🕐 **History Tracking**: Cronologia degli IP rilevati
-- 🔄 **Auto-refresh**: Aggiornamento automatico periodico
-- 📱 **Mobile Version**: Versione per dispositivi mobili
+### **Version 2.0 - Planned**
+- 🌐 **Multi-language Support**: Support for multiple languages
+- 📊 **Network Monitoring**: Continuous connection monitoring
+- 🕐 **History Tracking**: History of detected IPs
+- 🔄 **Auto-refresh**: Periodic automatic updates
+- 📱 **Mobile Version**: Mobile device version
 
-### **Versione 2.5 - In Valutazione**
-- 🛡️ **VPN Detection**: Rilevamento connessioni VPN/Proxy
-- 🌍 **Extended Geo Info**: Informazioni geografiche estese
-- 📧 **Export Features**: Esportazione dati in vari formati
-- 🎨 **Theme Customization**: Personalizzazione temi e colori
+### **Version 2.5 - Under Evaluation**
+- 🛡️ **VPN Detection**: VPN/Proxy connection detection
+- 🌍 **Extended Geo Info**: Extended geographic information
+- 📧 **Export Features**: Data export in various formats
+- 🎨 **Theme Customization**: Theme and color customization
 
-## 👨‍💻 Informazioni Sviluppatore
+## 👨‍💻 Developer Information
 
-**Sviluppato da**: EventExecutor  
-**Anno**: 2024  
-**Versione Corrente**: 1.0  
+**Developed by**: EventExecutor  
+**Year**: 2024  
+**Current Version**: 1.0  
 
-### **Contatti e Supporto**
-Per bug report, richieste di funzionalità o supporto generale, apri una issue nel repository del progetto.
+### **Contact and Support**
+For bug reports, feature requests, or general support, please open an issue in the project repository.
 
 ---
 
-## 📜 Licenza
+## 📜 License
 
-Questo progetto è distribuito sotto licenza MIT. Vedi il file `LICENSE` per i dettagli completi.
+This project is distributed under the MIT License. See the `LICENSE` file for complete details.
 
 ---
 
 <div align="center">
 
-**🌟 Se questo progetto ti è stato utile, considera di lasciare una stella! 🌟**
+**🌟 If this project was useful to you, consider leaving a star! 🌟**
 
-**Fatto con ❤️ e Python**
+**Made with ❤️ and Python**
 
 </div>
