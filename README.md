@@ -211,7 +211,7 @@ The following external services are used exclusively for IP detection:
 ## 👨‍💻 Developer Information
 
 **Developed by**: EventExecutor  
-**Year**: 2024  
+**Year**: 2025  
 **Current Version**: 1.0  
 
 ### **Contact and Support**
