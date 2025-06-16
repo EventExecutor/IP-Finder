@@ -200,7 +200,6 @@ The following external services are used exclusively for IP detection:
 - 📊 **Network Monitoring**: Continuous connection monitoring
 - 🕐 **History Tracking**: History of detected IPs
 - 🔄 **Auto-refresh**: Periodic automatic updates
-- 📱 **Mobile Version**: Mobile device version
 
 ### **Version 2.5 - Under Evaluation**
 - 🛡️ **VPN Detection**: VPN/Proxy connection detection
